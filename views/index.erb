@@ -1,0 +1,11 @@
+<h1>Listing des pokemons</h1>
+
+<ul>
+
+	<% @pokemons.each do |pokemon| %>
+		<img src="imgpokemon/<%= pokemon.id %>.png" width="100" height="100" />
+		<li>Nom : <%= pokemon.name %></li>
+		<li>Type : <%= pokemon.element %></li>
+	<% end %>
+
+</ul>
